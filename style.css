@@ -1,13 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 body {
-    background-color: #282c34;
-    min-height: 100vh;
+    background-color: #373c46;
+    color: white;
+    font-family: 'Fira Code', monospace;
+}
+
+main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
-    font-family: 'Fira Code', monospace;
+    flex-wrap: wrap;
+}
+
+.recording {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: #373c46;
+    padding: 5%;
+    border-radius: 80px;
+    margin: 2%;
+    transition: all 0.25s;
+    box-shadow: 11px 11px 22px #24282e,
+        -11px -11px 22px #4a505e;
+}
+
+.recording:hover {
+    padding: 5.5%;
+    border-radius: 100px;
+    box-shadow: 32px 32px 64px #24282e,
+        -32px -32px 64px #4a505e;
+}
+
+a {
+    color: green;
+}
+
+h1 {
+    text-align: center;
+    font-size: calc(10px + 5vmin);
+    box-shadow: 32px 32px 64px #24282e,
+        -32px -32px 64px #4a505e;
+    border-radius: 50px;
+    padding: 2.5%;
+}
+
+h3 {
+    text-align: center;
+    font-size: calc(10px + 1vmin);
+
+}
+
+.selfpromo {
+    font-size: x-small;
+    color: green;
+    position: sticky;
+    top: 20px;
+}
+
+.speaker>img {
+    height: 32px;
+    border-radius: 100px;
+}
+
+.speaker>span {
+    font-size: x-small;
+    color: green;
+}
+
+.speaker {
+
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    background: #2a2c31;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.speaker>* {
+    display: inline;
+    margin: 5%;
+}
+
+.speakers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
