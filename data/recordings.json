@@ -5,6 +5,16 @@
 			"path": "863-podcast-April6th.mp3",
 			"audioType": "audio/mpeg"
 		},
+		"speakers": [
+			{
+				"name": "Murra_T#9679",
+				"avatar": "Murra_T_9679.png"
+			},
+			{
+				"name": "legit.cs#2833",
+				"avatar": "Legitcs_2833.png"
+			}
+		],
 		"timestamp": "6/4/2022"
 	}
 ]

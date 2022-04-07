@@ -368,9 +368,9 @@ h3 {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5%;
+  margin: 1%;
   background: #2a2c31;
-  padding: 10%;
+  padding: 5%;
   border-radius: 10px; }
 
 .speaker > * {
@@ -382,7 +382,9 @@ h3 {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  align-self: center; }
+  align-self: center;
+  align-content: center;
+  flex-basis: 0; }
 
 .cursor {
   animation: cursor 2s infinite;
