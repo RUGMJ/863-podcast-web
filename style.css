@@ -340,7 +340,9 @@ h1 {
   font-size: calc(10px + 5vmin);
   box-shadow: 32px 32px 64px #24282e, -32px -32px 64px #4a505e;
   border-radius: 50px;
-  padding: 2.5%; }
+  padding: 2.5%;
+  width: fit-content;
+  margin: auto; }
 
 h3 {
   text-align: center;
@@ -358,7 +360,8 @@ h3 {
 
 .speaker > span {
   font-size: x-small;
-  color: green; }
+  color: green;
+  text-align: center; }
 
 .speaker {
   align-items: center;
@@ -378,7 +381,16 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-self: center; }
+
+.cursor {
+  animation: cursor 2s infinite;
+  color: #00aa00;
+  display: inline-block;
+  width: 10px;
+  margin-left: 5px;
+  border-radius: 1px; }
 
 .timestamp {
   color: green;
