@@ -1,7 +1,7 @@
 // Dynamicaly download data needed
 
 async function LoadRecordings() {
-	const recordingsList = await fetch('../data/recordings.json');
+	const recordingsList = await fetch('./data/recordings.json');
 	return await recordingsList.json();
 }
 
