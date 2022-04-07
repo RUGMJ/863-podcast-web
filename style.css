@@ -380,6 +380,10 @@ h3 {
   justify-content: center;
   flex-wrap: wrap; }
 
+.timestamp {
+  color: green;
+  font-size: x-small; }
+
 @keyframes slideIn {
   from {
     transform: translateY(-100vh) translateX(-100vw);
