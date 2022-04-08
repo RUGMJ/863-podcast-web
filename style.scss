@@ -38,10 +38,13 @@ main {
         -11px -11px 22px #4a505e;
     animation-name: slideIn;
     animation-duration: calc(var(--nth-child) * 0.25s);
+    margin: auto;
+    text-align: center;
 
 }
 
-.recording:hover {
+.recording:hover,
+.recording:active {
     padding: 5.5%;
     border-radius: 100px;
     box-shadow: 32px 32px 64px #24282e,
@@ -63,12 +66,6 @@ h1 {
     margin: auto;
 }
 
-h3 {
-    text-align: center;
-    font-size: calc(10px + 1vmin);
-
-
-}
 
 .selfpromo {
     font-size: x-small;
@@ -77,52 +74,37 @@ h3 {
     top: 20px;
 }
 
-.speaker>img {
-    height: 32px;
-    border-radius: 100px;
-}
-
-.speaker>span {
-    font-size: x-small;
-    color: green;
-    text-align: center;
+.speakers {
+    display: inline-flex;
+    padding: 0;
+    width: max-content;
 }
 
 .speaker {
+    padding: 0;
+}
 
-    align-items: center;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1%;
-    background: #2a2c31;
-    padding: 5%;
+.speaker>img:hover,
+.speaker>img:active {
+    +span {
+        display: inline;
+        position: absolute;
+
+    }
+}
+
+.speaker>img {
+    border-radius: 100px;
+    height: 75%;
+}
+
+.speaker>span {
+    display: none;
+    font-size: xx-small;
+    background: #24282e;
+    color: white;
+    padding: 1%;
     border-radius: 10px;
-}
-
-.speaker>* {
-    display: inline;
-    margin: 5%;
-}
-
-.speakers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-self: center;
-    align-content: center;
-    flex-basis: 0;
-    // margin: auto;
-}
-
-.cursor {
-    animation: cursor 2s infinite;
-    color: rgb(0, 170, 0);
-    display: inline-block;
-    width: 10px;
-    margin-left: 5px;
-    border-radius: 1px;
 }
 
 .timestamp {

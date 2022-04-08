@@ -325,9 +325,12 @@ main {
   transition: all 0.25s;
   box-shadow: 11px 11px 22px #24282e, -11px -11px 22px #4a505e;
   animation-name: slideIn;
-  animation-duration: calc(var(--nth-child) * 0.25s); }
+  animation-duration: calc(var(--nth-child) * 0.25s);
+  margin: auto;
+  text-align: center; }
 
-.recording:hover {
+.recording:hover,
+.recording:active {
   padding: 5.5%;
   border-radius: 100px;
   box-shadow: 32px 32px 64px #24282e, -32px -32px 64px #4a505e; }
@@ -344,55 +347,36 @@ h1 {
   width: fit-content;
   margin: auto; }
 
-h3 {
-  text-align: center;
-  font-size: calc(10px + 1vmin); }
-
 .selfpromo {
   font-size: x-small;
   color: green;
   position: sticky;
   top: 20px; }
 
-.speaker > img {
-  height: 32px;
-  border-radius: 100px; }
-
-.speaker > span {
-  font-size: x-small;
-  color: green;
-  text-align: center; }
+.speakers {
+  display: inline-flex;
+  padding: 0;
+  width: max-content; }
 
 .speaker {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 1%;
-  background: #2a2c31;
-  padding: 5%;
-  border-radius: 10px; }
+  padding: 0; }
 
-.speaker > * {
+.speaker > img:hover + span,
+.speaker > img:active + span {
   display: inline;
-  margin: 5%; }
+  position: absolute; }
 
-.speakers {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-self: center;
-  align-content: center;
-  flex-basis: 0; }
+.speaker > img {
+  border-radius: 100px;
+  height: 75%; }
 
-.cursor {
-  animation: cursor 2s infinite;
-  color: #00aa00;
-  display: inline-block;
-  width: 10px;
-  margin-left: 5px;
-  border-radius: 1px; }
+.speaker > span {
+  display: none;
+  font-size: xx-small;
+  background: #24282e;
+  color: white;
+  padding: 1%;
+  border-radius: 10px; }
 
 .timestamp {
   color: green;

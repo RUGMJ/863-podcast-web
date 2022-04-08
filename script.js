@@ -35,7 +35,7 @@ async function Script() {
 		recordingDom.appendChild(timestamp);
 
 		if (recording.speakers) {
-			const speakersTitle = document.createElement('h3');
+			const speakersTitle = document.createElement('span');
 			speakersTitle.textContent = 'Speakers';
 			recordingDom.appendChild(speakersTitle);
 
