@@ -8,6 +8,10 @@
 
 }
 
+* {
+    cursor: default;
+}
+
 body {
     background-color: #373c46;
     color: white;
@@ -53,6 +57,7 @@ main {
 
 a {
     color: green;
+    cursor: pointer;
 }
 
 h1 {

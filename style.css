@@ -299,6 +299,9 @@
 :nth-child(100) {
   --nth-child: 100; }
 
+* {
+  cursor: default; }
+
 body {
   background-color: #373c46;
   color: white;
@@ -336,7 +339,8 @@ main {
   box-shadow: 32px 32px 64px #24282e, -32px -32px 64px #4a505e; }
 
 a {
-  color: green; }
+  color: green;
+  cursor: pointer; }
 
 h1 {
   text-align: center;
