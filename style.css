@@ -359,7 +359,8 @@ h1 {
   width: max-content; }
 
 .speaker {
-  padding: 0; }
+  padding: 0;
+  margin: 1%; }
 
 .speaker > img:hover + span,
 .speaker > img:active + span {
@@ -368,7 +369,7 @@ h1 {
 
 .speaker > img {
   border-radius: 100px;
-  height: 75%; }
+  height: 75px; }
 
 .speaker > span {
   display: none;
