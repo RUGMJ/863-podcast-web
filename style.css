@@ -351,7 +351,22 @@ h1 {
   font-size: x-small;
   color: green;
   position: sticky;
-  top: 20px; }
+  top: 20px;
+  box-shadow: 32px 32px 64px #24282e, -32px -32px 64px #4a505e;
+  padding: 1%;
+  display: inline-block;
+  border-radius: 50px; }
+
+.invite {
+  font-size: x-small;
+  color: green;
+  position: sticky;
+  top: 20px;
+  box-shadow: 32px 32px 64px #24282e, -32px -32px 64px #4a505e;
+  padding: 1%;
+  display: inline;
+  left: 100%;
+  border-radius: 50px; }
 
 .speakers {
   display: inline-flex;
