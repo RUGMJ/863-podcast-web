@@ -149,3 +149,46 @@ h1 {
         background: #373c46;
     }
 }
+
+.tags {
+    display: inline-flex;
+    padding: 0;
+    width: max-content;
+}
+
+.tag {
+    padding: 0;
+    margin: 1%;
+}
+
+.tag>img:hover,
+.tag>img:active,
+.tag>span:hover,
+.tag>span:active {
+    +span {
+        display: inline;
+        position: absolute;
+
+    }
+}
+
+.tag>img {
+    height: 32px;
+}
+
+.tag>span {
+    display: none;
+    font-size: xx-small;
+    background: #24282e;
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.info {
+    fill: green;
+}
+
+.warning {
+    fill: yellow;
+}

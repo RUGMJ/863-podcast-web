@@ -11,12 +11,45 @@ async function Script() {
 	const recordings = await LoadRecordings();
 
 	recordings.forEach(recording => {
-		const recordingDom = document.createElement('dir');
+		const recordingDom = document.createElement('div');
 		recordingDom.classList = ['recording'];
 
 		const title = document.createElement('span');
 		title.textContent = recording.title;
 		recordingDom.appendChild(title);
+
+		if (recording.tags) {
+			let tags = document.createElement('div');
+			tags.classList = ['tags'];
+
+			recording.tags.forEach(tagJson => {
+				let tag = document.createElement('div');
+				tag.classList = ['tag'];
+				let tagContent = document.createElement('span');
+				tagContent.classList = ['content'];
+				let tagSymbol = document.createElement('img');
+				tagSymbol.classList = ['symbol'];
+				switch (tagJson.type) {
+					case 'info':
+						tagSymbol.src = './symbols/info.svg';
+						tagSymbol.classList = ['info'];
+						break;
+					case 'warning':
+						tagSymbol.src = './symbols/warning.svg';
+						tagSymbol.classList = ['warning'];
+						break;
+					default:
+						tagSymbol.src = './symbols/info.svg';
+						tagSymbol.classList = ['info'];
+						break;
+				}
+				tagContent.innerText = tagJson.content;
+				tag.appendChild(tagSymbol);
+				tag.appendChild(tagContent);
+				tags.appendChild(tag);
+			});
+			recordingDom.appendChild(tags);
+		}
 
 		const downloadLink = document.createElement('a');
 		downloadLink.href = `audio/${recording.audio.path}`;
