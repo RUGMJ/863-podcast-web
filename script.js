@@ -53,7 +53,7 @@ async function Script() {
 
 		const downloadLink = document.createElement('a');
 		downloadLink.href = `audio/${recording.audio.path}`;
-		downloadLink.download = true;
+		downloadLink.download = recording.title;
 		downloadLink.innerText = 'Download';
 		recordingDom.appendChild(downloadLink);
 
