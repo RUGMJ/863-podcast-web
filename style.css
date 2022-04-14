@@ -325,6 +325,7 @@ main {
   padding: 5%;
   border-radius: 80px;
   margin: 2%;
+  margin-bottom: 5%;
   transition: all 0.25s;
   box-shadow: 11px 11px 22px #24282e, -11px -11px 22px #4a505e;
   animation-name: slideIn;
