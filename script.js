@@ -8,8 +8,8 @@ async function LoadRecordings() {
 const main = document.getElementById('main');
 
 async function Script() {
-	const recordings = await LoadRecordings();
-
+	let recordings = await LoadRecordings();
+	recordings.reverse();
 	recordings.forEach(recording => {
 		const recordingDom = document.createElement('div');
 		recordingDom.classList = ['recording'];
